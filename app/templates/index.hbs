@@ -8,6 +8,7 @@
 <ul style="list-style: none;">
   {{#each model as |question|}}
     <li>{{question.content}} :: {{question.author}}</li>
+    <li><button {{action 'delete' question}} class="btn-xs" type="submit"><span class="glyphicon glyphicon-remove-circle"></span></button></li>
     <br>
   {{/each}}
 </ul>
