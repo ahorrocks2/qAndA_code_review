@@ -1,14 +1,14 @@
 {{outlet}}
 
 <h2>Welcome!</h2>
-<h4>Click on a question to learn more or submit an answer.</h4>
+<h4>Click on a question to learn more or submit an answer or {{new-question saveQuestion="saveQuestion"}}</h4>
 
 <hr>
 
 <ul style="list-style: none;">
   {{#each model as |question|}}
     <li>{{question.content}} :: {{question.author}}</li>
-    <li><button {{action 'delete' question}} class="btn-xs" type="submit"><span class="glyphicon glyphicon-remove-circle"></span></button></li>
+    <li><button {{action 'delete' question}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-remove-circle"></i></button></li>
     <br>
   {{/each}}
 </ul>
