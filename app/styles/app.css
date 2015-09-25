@@ -3,8 +3,66 @@
   font-size: 1.5em;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #08d679;
+}
 .navbar-default .navbar-brand {
   font-family: 'Amatic SC', sans-serif;
   font-size: 2.5em;
   color: #3c474b;
+}
+
+#welcome {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 3.5em;
+    color: #3c474b;
+}
+
+.head {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2.5em;
+  color: #3c474b;
+}
+
+.btn-link {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 1em;
+  color: #20738D;
+}
+
+.btn-link:hover{
+  color: #C33C54;
+  text-decoration: none;
+}
+
+.questions {
+  font-family: 'Montserrat', sans-serif;
+  color: #3c474b;
+}
+
+#question {
+  font-family: 'Montserrat', sans-serif;
+  color: #63b3bf;
+}
+.author {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2em;
+  color: #08d679;
+}
+
+a {
+  color: #20738D;
+}
+
+a:hover {
+  color: #C33C54;
+  text-decoration: none;
+}
+
+.forms {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.forms > button {
+  color: #20738D;
 }

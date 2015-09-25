@@ -1,9 +1,9 @@
 {{yield}}
 
 {{#if addQuestion}}
-  <h3>New Question</h3>
   <div>
-    <form>
+    <form class="forms">
+      <h3>Submit your own Question</h3>
       <div class="form-group">
         {{input value=content id="content" class="form-control" placeholder="Question"}}
       </div>
@@ -17,7 +17,7 @@
 
       </div>
 
-      <button {{action 'saveQuestion'}} class="btn btn-submit">Add Question</button>
+      <button {{action 'saveQuestion'}} class="btn btn-submit">ADD</button>
     </form>
   </div>
 {{else}}
