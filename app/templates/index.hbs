@@ -1,0 +1,13 @@
+{{outlet}}
+
+<h2>Welcome!</h2>
+<h4>Click on a question to learn more or submit an answer.</h4>
+
+<hr>
+
+<ul style="list-style: none;">
+  {{#each model as |question|}}
+    <li>{{question.content}} :: {{question.author}}</li>
+    <br>
+  {{/each}}
+</ul>
