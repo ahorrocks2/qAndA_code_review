@@ -7,8 +7,13 @@
 
 <ul style="list-style: none;">
   {{#each model as |question|}}
-    <li>{{question.content}} :: {{question.author}}</li>
-    <li><button {{action 'delete' question}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-remove-circle"></i></button>{{update-question question=question updateQuestion="updateQuestion"}}</li>
+    <li>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} :: {{question.author}}</li>
+    <div class="btn group">
+      <li>
+        <button {{action 'delete' question}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-remove-circle"></i></button>
+        {{update-question question=question updateQuestion="updateQuestion"}}
+      </li>
+    </div>
     <br>
   {{/each}}
 </ul>
