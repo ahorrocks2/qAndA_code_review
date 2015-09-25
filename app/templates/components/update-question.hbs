@@ -1,7 +1,7 @@
 {{yield}}
 
-{{#if addQuestion}}
-  <h3>New Question</h3>
+{{#if updateQuestionShowing}}
+  <h3>Update Question</h3>
   <div>
     <form>
       <div class="form-group">
@@ -17,9 +17,9 @@
 
       </div>
 
-      <button {{action 'saveQuestion'}} class="btn btn-submit">Add Question</button>
+      <button {{action 'updateQuestion' question}} class="btn btn-submit">Submit</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}} class="btn btn-link">Click here to subit your own!</button>
+  <button {{action 'updateFormShow'}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-pencil"></i></button>
 {{/if}}
