@@ -13,8 +13,7 @@
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" rows="3" id="textArea" placeholder="Additional Notes">{{input value=notes id="notes" class="form-control"}}</textarea>
-
+        {{input value=notes id="notes" class="form-control" placeholder="Additional Notes"}}
       </div>
 
       <button {{action 'updateQuestion' question}} class="btn btn-submit">Submit</button>

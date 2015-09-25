@@ -4,7 +4,7 @@
 <h4 class="head">Click on a question to learn more or {{new-question saveQuestion="saveQuestion"}}</h4>
 <hr>
 
-<div class="questions">
+<div class="body">
   <ul style="list-style: none;">
     {{#each model as |question|}}
       <li>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}} :: {{question.author}}</li>
