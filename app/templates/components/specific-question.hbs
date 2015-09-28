@@ -5,3 +5,18 @@
 <p>Additional Notes: {{question.notes}} </p>
 
 <hr>
+
+<h3 class="head">Answers:</h3>
+<div class="container">
+  <div class="body">
+    {{#if question.answers}}
+      {{#each question.answers as |answer|}}
+        <h4>{{answer.text}}</h4>
+        <p>Submitted by {{answer.name}}</p>
+      {{/each}}
+    {{else}}
+      <h4>There aren't any answers yet!</h4>
+    {{/if}}
+  </div>
+</div>
+<hr>

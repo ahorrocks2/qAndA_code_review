@@ -1,5 +1,7 @@
 {{outlet}}
 
 <div class="container">
-  {{specific-question question=model}}
+  {{specific-question question=model.question}}
+
+  {{new-answer question=model.question submitAnswer="submitAnswer"}}
 </div>
