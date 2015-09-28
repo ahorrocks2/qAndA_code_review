@@ -1,7 +1,7 @@
 {{outlet}}
 
 <div class="container">
-  {{specific-question question=model.question}}
+  {{specific-question question=model.question deleteAnswer="deleteAnswer" answer=answer}}
 
   {{new-answer question=model.question submitAnswer="submitAnswer"}}
 </div>

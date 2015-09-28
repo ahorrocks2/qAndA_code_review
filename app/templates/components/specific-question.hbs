@@ -13,6 +13,9 @@
       {{#each question.answers as |answer|}}
         <h4>{{answer.text}}</h4>
         <p>Submitted by {{answer.name}}</p>
+        <div class="btn group">
+            <button {{action 'deleteAnswer' answer}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-remove-circle"></i></button>
+        </div>
       {{/each}}
     {{else}}
       <h4>There aren't any answers yet!</h4>
