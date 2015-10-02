@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('question', {path: '/question/:question_id'});
   this.route('rules');
   this.route('contact');
+  this.route('searchPage', {path: '/searchPage/:searchPage_id'});
 });
 
 export default Router;

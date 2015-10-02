@@ -1,9 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'span',
   addQuestion: false,
 
   actions: {
+    cancel() {
+      this.set('addQuestion', false);
+    },
     questionFormShow() {
       this.set('addQuestion', true);
     },

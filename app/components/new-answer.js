@@ -4,6 +4,9 @@ export default Ember.Component.extend({
   addAnswer: false,
 
   actions: {
+    cancel() {
+      this.set('addAnswer', false);
+    },
     answerFormShow() {
       this.set('addAnswer', true);
     },

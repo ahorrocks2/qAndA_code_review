@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   updateQuestionShowing: false,
 
   actions: {
+    cancel() {
+      this.set('updateQuestionShowing', false);
+    },
     updateFormShow() {
       this.set('updateQuestionShowing', true);
     },

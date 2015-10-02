@@ -17,8 +17,9 @@
       </div>
 
       <button {{action 'saveQuestion'}} class="btn btn-submit">ADD</button>
+      <button {{action 'cancel'}} class="btn btn-warning">CANCEL</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}} class="btn btn-link">Click here to subit your own!</button>
+  <button {{action 'questionFormShow'}} class="btn btn-link">Click here to submit your own!</button>
 {{/if}}
