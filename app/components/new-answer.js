@@ -11,7 +11,8 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         text: this.get('text'),
-        question: this.get('question')
+        question: this.get('question'),
+        date_added: Date.now()
       }
       this.sendAction('submitAnswer', params),
       this.set('addAnswer', false);

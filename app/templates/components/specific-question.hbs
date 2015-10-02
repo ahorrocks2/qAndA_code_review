@@ -12,7 +12,7 @@
     {{#if question.answers}}
       {{#each question.answers as |answer|}}
         <h4>{{answer.text}}</h4>
-        <p>Submitted by {{answer.name}}</p>
+        <p>Submitted by {{answer.name}} on {{format-date answer.date_added}}</p>
         <div class="btn group">
             <button {{action 'deleteAnswer' answer}} class="btn-xs" type="submit"><i class="glyphicon glyphicon-remove-circle"></i></button>
         </div>
